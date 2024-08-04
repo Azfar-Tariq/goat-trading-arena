@@ -7,17 +7,23 @@ import Pricing from "../components/pages/Pricing";
 import Contact from "../components/pages/Contact";
 import NotFound from "../components/pages/NotFound";
 
-const AppRouter: React.FC = () => (
-  <Router>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<Rules />} />
-      <Route path="/features" element={<Prizes />} />
-      <Route path="/pricing" element={<Pricing />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  </Router>
+interface HeaderProps {
+  isMenuOpen: boolean;
+}
+
+const AppRouter: React.FC<HeaderProps> = ({ isMenuOpen }) => (
+  <div className={`${isMenuOpen ? "blur-sm" : ""}`}>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Rules />} />
+        <Route path="/features" element={<Prizes />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  </div>
 );
 
 export default AppRouter;

@@ -1,43 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "../../assets/logo.png";
 import Button from "../common/Button";
 import MenuIcon from "../../assets/icons/menu";
 import CloseIcon from "../../assets/icons/close";
+import { NavBarItem } from "../../data/navItems";
 
-interface NavBarItem {
-  name: string;
-  link: string;
+interface HeaderProps {
+  isMenuOpen: boolean;
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  navBarItems: NavBarItem[];
 }
 
-const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-  const navBarItems: NavBarItem[] = [
-    {
-      name: "Home",
-      link: "#",
-    },
-    {
-      name: "Pricing",
-      link: "#",
-    },
-    {
-      name: "Rules",
-      link: "#",
-    },
-    {
-      name: "Prizing",
-      link: "#",
-    },
-    {
-      name: "Contact",
-      link: "#",
-    },
-  ];
-
+const Header: React.FC<HeaderProps> = ({
+  isMenuOpen,
+  setIsMenuOpen,
+  navBarItems,
+}) => {
   return (
     <header
-      className="relative z-10 flex items-center justify-between bg-gradient-to-b from-bg2 via-bg2/70 to-transparent px-6 py-4"
-      style={{ backdropFilter: "blur(8px)" }}
+      className={`${isMenuOpen ? "blur-sm" : ""} relative z-10 flex items-center justify-between bg-gradient-to-b from-bg2 via-bg2/70 to-transparent px-6 py-4`}
+      // style={{ backdropFilter: "blur(8px)" }}
     >
       {/* Logo */}
       <div className="flex items-center">
@@ -50,15 +32,23 @@ const Header: React.FC = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="focus:outline-none"
         >
-          {isMenuOpen ? (
-            <CloseIcon color="white" />
-          ) : (
-            <MenuIcon color="white" />
-          )}
+          {!isMenuOpen && <MenuIcon color="white" />}
         </button>
       </div>
 
       {/* Overlay Navigation Menu for Small Screens */}
+      {isMenuOpen && (
+        <div className="absolute inset-0 z-50 h-screen w-screen bg-black/80 blur-sm">
+          {isMenuOpen ? (
+            <CloseIcon
+              color="white"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            />
+          ) : (
+            <></>
+          )}
+        </div>
+      )}
 
       {/* Navigation Bar for Larger Screens */}
       <nav>

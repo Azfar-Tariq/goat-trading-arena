@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="hero-content relative flex h-screen items-center justify-center bg-bg text-center text-white">
+    <section className="hero-content relative flex h-screen items-start bg-bg text-center text-white md:items-center">
       <div className="absolute inset-0 top-56 z-0 h-full w-full">
         <svg
           style={{
@@ -69,19 +69,19 @@ const Hero: React.FC = () => {
         </svg>
       </div>
       {/* Hero Content */}
-      <div className="relative z-10 grid grid-cols-1 items-center gap-x-6 gap-y-5 px-6 lg:grid-cols-2">
-        <div className="text-left">
-          <h6 className="mb-4 text-lg text-accent">
+      <div className="relative z-10 mt-4 grid grid-cols-1 items-center gap-x-6 gap-y-5 px-6 lg:grid-cols-2">
+        <div className="flex flex-col justify-start text-left">
+          <h6 className="text-fontTitle6 mb-4 text-accent">
             The fastest prop firm to get funded
           </h6>
-          <h1 className="mb-6 w-10/12 text-5xl font-bold md:text-6xl">
+          <h1 className="mb-6 w-10/12 text-[30px] font-bold leading-none md:text-6xl">
             Never depend on
             <br />
-            <span className="bg-gradient-to-r from-[#eaf5ff] via-[#b7ddff] to-[#6bb8ff] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#eaf5ff] via-[#b7ddff] to-[#6bb8ff] bg-clip-text leading-8 text-transparent">
               Small Trading Capital
             </span>
           </h1>
-          <p className="mb-8 w-2/3 text-lg md:text-xl">
+          <p className="mb-4 text-[14px] md:mb-8 md:w-2/3 md:text-xl">
             Unlock up to $800,000 in Funded Sim with a Prop Firm that cares
             about its Traders
           </p>
