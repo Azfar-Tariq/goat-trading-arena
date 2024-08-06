@@ -28,8 +28,8 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="hero-content relative flex h-screen items-start bg-bg text-center text-white md:items-center">
-      <div className="absolute inset-0 top-56 z-0 h-full w-full">
+    <section className="hero-content relative mb-12 flex bg-bg text-center text-white lg:my-28">
+      <div className="absolute inset-0 top-56 z-0">
         <svg
           style={{
             width: "100%",
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
       </div>
       {/* Hero Content */}
       <div className="relative z-10 mt-4 grid grid-cols-1 items-center gap-x-6 gap-y-5 px-6 lg:grid-cols-2">
-        <div className="flex flex-col justify-start text-left">
+        <div className="w1/2 flex flex-col items-center text-center lg:text-left lg:items-start">
           <h6 className="mb-4 text-fontTitle6 text-accent">
             A Firm Like Never before The Easiest Way to Get Rich
           </h6>

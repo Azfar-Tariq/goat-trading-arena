@@ -81,10 +81,17 @@ const ScrollingTicker: React.FC = () => {
         style={{ display: "inline-flex" }}
       >
         {items.map((item, index) => (
-          <div key={index} className="mx-4 flex items-center px-6">
-            <img src={item.image} alt={item.name} className="mr-4 h-10 w-10" />
-            <div className="flex items-center gap-4 text-white">
-              <p className="text-lg">{item.name}</p>
+          <div
+            key={index}
+            className="mx-2 items-center px-2 md:mx-4 md:flex md:px-6"
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className="mb-2 h-6 w-6 md:mr-4 md:h-10 md:w-10"
+            />
+            <div className="items-center gap-4 text-white md:flex">
+              <p className="text-sm md:text-lg">{item.name}</p>
               <p>${item.current_price.toFixed(2)}</p>
               <p
                 className={`text-sm ${
@@ -101,11 +108,15 @@ const ScrollingTicker: React.FC = () => {
         {items.map((item, index) => (
           <div
             key={index + items.length}
-            className="mx-4 flex items-center px-6"
+            className="mx-2 items-center px-2 md:mx-4 md:flex md:px-6"
           >
-            <img src={item.image} alt={item.name} className="mr-4 h-10 w-10" />
-            <div className="flex items-center gap-4 text-white">
-              <p className="text-lg">{item.name}</p>
+            <img
+              src={item.image}
+              alt={item.name}
+              className="mr-4 h-6 w-6 md:h-10 md:w-10"
+            />
+            <div className="items-center gap-4 text-white md:flex">
+              <p className="text-sm md:text-lg">{item.name}</p>
               <p>${item.current_price.toFixed(2)}</p>
               <p
                 className={`text-sm ${

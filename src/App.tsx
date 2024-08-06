@@ -26,7 +26,6 @@ const App: React.FC = () => {
       />
       <AppRouter />
       <Circle />
-
       {isMenuOpen && (
         <div className="fixed inset-0 z-50 flex h-screen w-screen flex-col items-center bg-black/80 backdrop-blur-md">
           <div className="absolute right-6 top-4">

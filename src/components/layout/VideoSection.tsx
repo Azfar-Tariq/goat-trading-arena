@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoSection: React.FC = () => {
   return (
-    <section className="relative z-10 mx-4 mt-20 flex min-h-screen items-center justify-center">
+    <section className="relative z-10 mx-4 my-8 flex items-center justify-center lg:my-20">
       <div className="w-full max-w-4xl">
         <div className="relative h-0 overflow-hidden rounded-lg pb-[56.25%] shadow-lg">
           <iframe

@@ -9,7 +9,10 @@ import NotFound from "../components/pages/NotFound";
 
 const AppRouter: React.FC = () => (
   <div>
-    <Router>
+    {/* for production */}
+    {/* <Router basename="https://azfar-tariq.github.io/goat-trading-arena"> */}
+    {/* for development */}
+    <Router basename="/goat-trading-arena">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Rules />} />
