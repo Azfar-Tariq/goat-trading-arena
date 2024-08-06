@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Button from "../common/Button";
 import Card1 from "../../assets/card1.png";
 import Card2 from "../../assets/card2.png";
-import GitHub from "../../assets/icons/github";
+import Telegram from "../../assets/icons/telegram";
 
 const Hero: React.FC = () => {
   useEffect(() => {
@@ -71,19 +71,20 @@ const Hero: React.FC = () => {
       {/* Hero Content */}
       <div className="relative z-10 mt-4 grid grid-cols-1 items-center gap-x-6 gap-y-5 px-6 lg:grid-cols-2">
         <div className="flex flex-col justify-start text-left">
-          <h6 className="text-fontTitle6 mb-4 text-accent">
-            The fastest prop firm to get funded
+          <h6 className="mb-4 text-fontTitle6 text-accent">
+            A Firm Like Never before The Easiest Way to Get Rich
           </h6>
           <h1 className="mb-6 w-10/12 text-[30px] font-bold leading-none md:text-6xl">
-            Never depend on
+            Never Depend on
             <br />
             <span className="bg-gradient-to-r from-[#eaf5ff] via-[#b7ddff] to-[#6bb8ff] bg-clip-text leading-8 text-transparent">
-              Small Trading Capital
+              Big Capital again
             </span>
           </h1>
           <p className="mb-4 text-[14px] md:mb-8 md:w-2/3 md:text-xl">
-            Unlock up to $800,000 in Funded Sim with a Prop Firm that cares
-            about its Traders
+            Earn upto 100,000$ Real Money Usdt to your Wallet address and Cars
+            bikes as gifts A Firm that cares about it's Traders Revolutionary
+            Change in Trading
           </p>
           <div className="flex space-x-4">
             <Button />
@@ -92,8 +93,8 @@ const Hero: React.FC = () => {
               target="_self"
               className="inline-flex items-center gap-2 rounded-2xl border border-white bg-[#262626] px-6 py-3 text-lg font-bold text-white transition-colors duration-300 hover:bg-white hover:text-[#111111]"
             >
-              <GitHub />
-              Join Discord
+              <Telegram />
+              Join Telegram
             </a>
           </div>
         </div>

@@ -7,12 +7,8 @@ import Pricing from "../components/pages/Pricing";
 import Contact from "../components/pages/Contact";
 import NotFound from "../components/pages/NotFound";
 
-interface HeaderProps {
-  isMenuOpen: boolean;
-}
-
-const AppRouter: React.FC<HeaderProps> = ({ isMenuOpen }) => (
-  <div className={`${isMenuOpen ? "blur-sm" : ""}`}>
+const AppRouter: React.FC = () => (
+  <div>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />

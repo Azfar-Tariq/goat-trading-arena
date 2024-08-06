@@ -8,8 +8,11 @@ const Circle: React.FC = () => {
 
     const handleMouseMove = (event: MouseEvent) => {
       if (circle) {
-        circle.style.top = `${event.clientY - circle.offsetHeight / 2}px`;
-        circle.style.left = `${event.clientX - circle.offsetWidth / 2}px`;
+        const offsetX = window.scrollX;
+        const offsetY = window.scrollY;
+
+        circle.style.top = `${event.clientY + offsetY - circle.offsetHeight / 2}px`;
+        circle.style.left = `${event.clientX + offsetX - circle.offsetWidth / 2}px`;
       }
     };
 
@@ -23,7 +26,7 @@ const Circle: React.FC = () => {
   return (
     <div
       ref={circleRef}
-      className="circle absolute w-96 h-96 bg-[#0085ff] rounded-full opacity-50 pointer-events-none blur-[8rem]"
+      className="circle pointer-events-none absolute h-96 w-96 rounded-full bg-[#0085ff] opacity-50 blur-[8rem]"
     ></div>
   );
 };

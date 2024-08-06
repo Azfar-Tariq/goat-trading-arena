@@ -19,7 +19,6 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <header
       className={`${isMenuOpen ? "blur-sm" : ""} relative z-10 flex items-center justify-between bg-gradient-to-b from-bg2 via-bg2/70 to-transparent px-6 py-4`}
-      // style={{ backdropFilter: "blur(8px)" }}
     >
       {/* Logo */}
       <div className="flex items-center">

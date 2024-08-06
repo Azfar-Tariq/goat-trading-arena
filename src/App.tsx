@@ -24,10 +24,10 @@ const App: React.FC = () => {
         setIsMenuOpen={setIsMenuOpen}
         navBarItems={navBarItems}
       />
-      <AppRouter isMenuOpen={isMenuOpen} />
+      <AppRouter />
       <Circle />
 
-      {/* {isMenuOpen && (
+      {isMenuOpen && (
         <div className="fixed inset-0 z-50 flex h-screen w-screen flex-col items-center bg-black/80 backdrop-blur-md">
           <div className="absolute right-6 top-4">
             <CloseIcon color="white" onClick={() => setIsMenuOpen(false)} />
@@ -37,7 +37,7 @@ const App: React.FC = () => {
               <a
                 key={index}
                 href={item.link}
-                className="text-fontTitle3 text-title"
+                className="nav-item text-fontTitle3 text-title"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
@@ -55,7 +55,7 @@ const App: React.FC = () => {
             </div>
           </nav>
         </div>
-      )} */}
+      )}
     </div>
   );
 };
