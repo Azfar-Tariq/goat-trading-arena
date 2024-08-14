@@ -11,9 +11,9 @@ const AppRouter: React.FC = () => (
   <Router basename="/goat-trading-arena">
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/pricing" element={<Pricing />} />
       <Route path="/rules" element={<Rules />} />
       <Route path="/prizing" element={<Prizes />} />
+      <Route path="/pricing" element={<Pricing />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

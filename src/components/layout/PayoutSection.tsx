@@ -2,7 +2,7 @@ import React from "react";
 
 const PayoutSection: React.FC = () => {
   return (
-    <section className="relative z-10 mx-20 my-24 flex min-h-screen items-center justify-center lg:mx-48">
+    <section className="relative z-10 mx-20 flex min-h-screen items-center justify-center lg:mx-48">
       <div className="bg-custom-gradient flex flex-col items-start justify-between gap-4 rounded-[30px] p-2 lg:flex-row lg:items-center lg:gap-20">
         {/* Left Side */}
         <div className="space-y-4 p-5 text-left lg:px-12">
