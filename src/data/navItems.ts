@@ -6,7 +6,7 @@ export interface NavBarItem {
 export const navBarItems: NavBarItem[] = [
   {
     name: "Home",
-    link: "/",
+    link: "/goat-trading-arena",
   },
   {
     name: "Pricing",
