@@ -53,15 +53,13 @@ const ChooseUsSection: React.FC = () => {
           </div>
 
           {/* TradingPilot */}
-          <div className="flex flex-col gap-4">
-            <div className="mb-4 flex flex-col items-start justify-between rounded-[30px] bg-colorGR4 p-8">
-              <svg
-                className="h-10 w-10"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                {/* Add TradingPilot icon SVG path here */}
-              </svg>
+          <div className="flex flex-col gap-3">
+            <div className="flex flex-col items-start justify-between gap-8 rounded-[30px] bg-colorGR4 p-8">
+              <img
+                src="https://goatfundedtrader.com/wp-content/uploads/2024/07/Trading-Pilot-logo.svg"
+                alt="Trading Pilot Logo"
+                className="h-14 w-auto"
+              />
               <p className="text-xl">23 reviews / 4.9</p>
             </div>
             <div className="flex w-full items-center justify-between gap-8 rounded-[30px] bg-gradient-gr5 p-8">

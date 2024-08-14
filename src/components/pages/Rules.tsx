@@ -1,10 +1,13 @@
 import React from "react";
+import RulesAndRegulations from "../layout/RulesAndRegulations";
+import FAQ from "../layout/FAQ";
 
 const Rules: React.FC = () => {
   return (
-    <div className="home">
-      <h1>Rules Page</h1>
-    </div>
+    <>
+      <RulesAndRegulations />
+      <FAQ />
+    </>
   );
 };
 
