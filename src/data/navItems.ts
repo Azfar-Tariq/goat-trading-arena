@@ -6,22 +6,22 @@ export interface NavBarItem {
 export const navBarItems: NavBarItem[] = [
   {
     name: "Home",
-    link: "#",
+    link: "/",
   },
   {
     name: "Pricing",
-    link: "#",
+    link: "/pricing",
   },
   {
     name: "Rules",
-    link: "#",
+    link: "/rules",
   },
   {
     name: "Prizing",
-    link: "#",
+    link: "/prizing",
   },
   {
     name: "Contact",
-    link: "#",
+    link: "/contact",
   },
 ];

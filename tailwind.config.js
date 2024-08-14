@@ -13,6 +13,10 @@ export default {
         bg2: "#0a0a0b",
         bgCard: "#262626",
         accent: "#99ceff",
+        colorGR4:
+          "linear-gradient(205deg, #616161 9.15%, #676767 48.67%, #595959 87.16%)",
+        colorGR5:
+          "linear-gradient(270deg, #319cff 10.17%, #0176e2 54.82%, #0264be 92.86%)",
       },
       backgroundImage: {
         "gradient-gr5":
@@ -51,6 +55,9 @@ export default {
         viewDesktopSmall: "993px",
         viewTablet: "768px",
         viewMobile: "400px",
+      },
+      fontFamily: {
+        sans: ["Mona Sans", "sans-serif"],
       },
     },
   },

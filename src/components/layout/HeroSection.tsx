@@ -69,15 +69,15 @@ const Hero: React.FC = () => {
         </svg>
       </div>
       {/* Hero Content */}
-      <div className="relative z-10 mt-4 grid grid-cols-1 items-center gap-x-6 gap-y-5 px-6 lg:grid-cols-2">
-        <div className="w1/2 flex flex-col items-center text-center lg:text-left lg:items-start">
-          <h6 className="mb-4 text-fontTitle6 text-accent">
+      <div className="relative z-10 mb-32 mt-4 grid grid-cols-1 items-center gap-x-6 gap-y-5 px-6 lg:grid-cols-2">
+        <div className="w1/2 flex flex-col items-start text-left md:items-center md:text-center lg:items-start lg:text-left">
+          <h6 className="mb-4 text-sm text-accent md:text-fontTitle6">
             A Firm Like Never before The Easiest Way to Get Rich
           </h6>
           <h1 className="mb-6 w-10/12 text-[30px] font-bold leading-none md:text-6xl">
             Never Depend on
             <br />
-            <span className="bg-gradient-to-r from-[#eaf5ff] via-[#b7ddff] to-[#6bb8ff] bg-clip-text leading-8 text-transparent">
+            <span className="bg-gradient-to-b from-[#eaf5ff] via-[#b7ddff] to-[#6bb8ff] bg-clip-text leading-8 text-transparent">
               Big Capital again
             </span>
           </h1>

@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
   return (
     <header
-      className={`${isMenuOpen ? "blur-sm" : ""} relative z-10 flex items-center justify-between bg-gradient-to-b from-bg2 via-bg2/70 to-transparent px-6 py-4`}
+      className={`${isMenuOpen ? "blur-sm" : ""} fixed top-0 z-20 flex w-full items-center justify-between bg-gradient-to-b from-bg2 via-bg2/70 to-transparent px-6 py-4`}
     >
       {/* Logo */}
       <div className="flex items-center">
@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({
 
       {/* Overlay Navigation Menu for Small Screens */}
       {isMenuOpen && (
-        <div className="absolute inset-0 z-50 h-screen w-screen bg-black/80 blur-sm">
+        <div className="absolute inset-0 z-50 min-h-screen w-screen bg-black/80 blur-sm">
           {isMenuOpen ? (
             <CloseIcon
               color="white"
