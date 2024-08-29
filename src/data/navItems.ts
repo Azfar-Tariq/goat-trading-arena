@@ -6,22 +6,22 @@ export interface NavBarItem {
 export const navBarItems: NavBarItem[] = [
   {
     name: "Home",
-    link: "/goat-trading-arena/",
+    link: "/",
   },
   {
     name: "Pricing",
-    link: "/goat-trading-arena/pricing",
+    link: "/pricing",
   },
   {
     name: "Rules",
-    link: "/goat-trading-arena/rules",
+    link: "/rules",
   },
   {
     name: "Prizing",
-    link: "/goat-trading-arena/prizing",
+    link: "/prizing",
   },
   {
     name: "Contact",
-    link: "/goat-trading-arena/contact",
+    link: "/contact",
   },
 ];

@@ -8,7 +8,7 @@ import Contact from "../components/pages/Contact";
 import NotFound from "../components/pages/NotFound";
 
 const AppRouter: React.FC = () => (
-  <Router basename="/goat-trading-arena">
+  <Router>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/rules" element={<Rules />} />
