@@ -5,6 +5,11 @@ import YouTube from "../../assets/icons/youtube";
 import Discord from "../../assets/icons/discord";
 import Twitter from "../../assets/icons/twitter";
 import Instagram from "../../assets/icons/instagram";
+import Visa from "../../assets/svgs/visa.svg";
+import MasterCard from "../../assets/svgs/mastercard.svg";
+import Amex from "../../assets/svgs/amex.svg";
+import Ethereum from "../../assets/svgs/ethereum.svg";
+import Bitcoin from "../../assets/svgs/bitcoin.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -81,25 +86,22 @@ const Footer: React.FC = () => {
             </button>
             <p className="mb-2 text-sm">Pay as you want</p>
             <div className="flex space-x-2">
+              <img src={Visa} alt="visa" className="w-10 object-contain" />
               <img
-                src="https://goatfundedtrader.com/wp-content/uploads/2024/07/Visa.svg"
-                alt="visa"
-              />
-              <img
-                src="https://goatfundedtrader.com/wp-content/uploads/2024/07/Mastercard.svg"
+                src={MasterCard}
                 alt="mastercard"
+                className="w-10 object-contain"
               />
+              <img src={Amex} alt="amex" className="w-10 object-contain" />
               <img
-                src="https://goatfundedtrader.com/wp-content/uploads/2024/07/amex.svg"
-                alt="amex"
-              />
-              <img
-                src="https://goatfundedtrader.com/wp-content/uploads/2024/07/ethereum-logo.svg"
+                src={Ethereum}
                 alt="ethereum"
+                className="w-10 object-contain"
               />
               <img
-                src="https://goatfundedtrader.com/wp-content/uploads/2024/07/bitcoin-logo.svg"
+                src={Bitcoin}
                 alt="bitcoin"
+                className="w-10 object-contain"
               />
             </div>
           </div>

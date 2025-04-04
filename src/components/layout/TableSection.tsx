@@ -1,6 +1,11 @@
 import React from "react";
 import PricingPackages from "../table/PricingPackage";
 // import TradingTable from "../table/TradingTable";
+import Visa from "../../assets/svgs/visa.svg";
+import MasterCard from "../../assets/svgs/mastercard.svg";
+import Amex from "../../assets/svgs/amex.svg";
+import Ethereum from "../../assets/svgs/ethereum.svg";
+import Bitcoin from "../../assets/svgs/bitcoin.svg";
 
 const TableSection: React.FC = () => {
   return (
@@ -15,29 +20,29 @@ const TableSection: React.FC = () => {
       <PricingPackages />
       <div className="flex flex-wrap justify-center gap-4">
         <img
-          src="https://goatfundedtrader.com/wp-content/uploads/2024/07/Visa.svg"
+          src={Visa}
           alt="visa"
-          className="rounded-3xl bg-bgCard p-4"
+          className="w-24 rounded-2xl bg-bgCard object-contain px-4 py-3"
         />
         <img
-          src="https://goatfundedtrader.com/wp-content/uploads/2024/07/Mastercard.svg"
+          src={MasterCard}
           alt="mastercard"
-          className="rounded-3xl bg-bgCard p-4"
+          className="w-24 rounded-2xl bg-bgCard object-contain px-4 py-3"
         />
         <img
-          src="https://goatfundedtrader.com/wp-content/uploads/2024/07/amex.svg"
+          src={Amex}
           alt="amex"
-          className="rounded-3xl bg-bgCard p-4 px-6"
+          className="w-24 rounded-2xl bg-bgCard object-contain px-4 py-3"
         />
         <img
-          src="https://goatfundedtrader.com/wp-content/uploads/2024/07/ethereum-logo.svg"
+          src={Ethereum}
           alt="ethereum"
-          className="rounded-3xl bg-bgCard p-4 px-6"
+          className="w-24 rounded-2xl bg-bgCard object-contain px-4 py-3"
         />
         <img
-          src="https://goatfundedtrader.com/wp-content/uploads/2024/07/bitcoin-logo.svg"
+          src={Bitcoin}
           alt="bitcoin"
-          className="rounded-3xl bg-bgCard p-4 px-6"
+          className="w-24 rounded-2xl bg-bgCard object-contain px-4 py-3"
         />
       </div>
     </div>

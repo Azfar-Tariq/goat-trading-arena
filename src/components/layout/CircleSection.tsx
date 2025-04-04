@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../../assets/logo.png";
 
 const CircleSection: React.FC = () => {
   return (
@@ -25,13 +26,9 @@ const CircleSection: React.FC = () => {
       </div>
       <div className="relative flex h-[27rem] w-1/2 items-center justify-center">
         {/* Static Innermost Circle */}
-        <div className="absolute z-10 flex h-[20rem] w-[20rem] items-center justify-center rounded-full border-2 border-accent bg-bgCard">
+        <div className="absolute z-10 flex h-[20rem] w-[20rem] items-center justify-center rounded-full border-2 border-accent bg-black">
           {/* Content Inside the Innermost Circle */}
-          <img
-            src="https://goatfundedtrader.com/wp-content/uploads/2024/05/Goat-Funded-Trader-logos-violet.svg"
-            alt="GFT Logo"
-            className="h-12 w-12"
-          />
+          <img src={Logo} alt="Logo" className="h-full w-3/4 object-contain" />
         </div>
 
         {/* Animated Outer Circles */}

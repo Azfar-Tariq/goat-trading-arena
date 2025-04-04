@@ -1,4 +1,5 @@
 import React from "react";
+import LogoWhite from "../../assets/logo-white.png";
 
 const CompetitionSection: React.FC = () => {
   const competitors = [
@@ -58,7 +59,7 @@ const CompetitionSection: React.FC = () => {
                     {competitor.isLogo ? (
                       <div className="flex h-16 items-center justify-center">
                         <img
-                          src="https://goatfundedtrader.com/wp-content/uploads/2023/02/logo-white.png"
+                          src={LogoWhite}
                           alt="GOAT Funded Trader"
                           className="h-32 w-32 object-contain"
                         />
